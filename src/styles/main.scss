@@ -1,0 +1,130 @@
+// Variabler
+$font-family: "Montserrat", sans-serif;
+$bg-color: #dde2eb;
+$text-color: #2a324b;
+$primary-color: #2a324b;
+$secondary-color: #58699d;
+$link-color: #007bff;
+$border-radius: 8px;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+$padding: 15px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $bg-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: $padding;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: $border-radius;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: $box-shadow;
+    margin-bottom: 0px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: $bg-color;
+    padding: 15px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+
+    a {
+        background-color: $primary-color;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+
+        &.active {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: 2px solid $primary-color;
+        }
+    }
+}
+
+main {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: $text-color;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+    }
+}
+
+
+ul {
+    list-style-type: disc;
+    padding-left: 0px;
+
+    li {
+        margin-bottom: 10px;
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
